@@ -31,11 +31,11 @@ jobs:
         run: swift test -v
       - name: 📦 Build iOS Archive and Extract IPA
         run: |
-          # Player.xcodeproj 사용
-          PROJECT_FILE="Player.xcodeproj"
+          # LLL/Demo/SwiftUI/Player.xcodeproj 사용
+          PROJECT_FILE="LLL/Demo/SwiftUI/Player.xcodeproj"
           
           if [ ! -d "$PROJECT_FILE" ]; then
-            echo "❌ Player.xcodeproj를 찾을 수 없습니다"
+            echo "❌ LLL/Demo/SwiftUI/Player.xcodeproj를 찾을 수 없습니다"
             exit 1
           fi
           
